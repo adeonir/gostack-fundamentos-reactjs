@@ -32,7 +32,7 @@
 
 Nesse desafio, eu continuei desenvolvendo a aplicação de gestão de transações, agora chamada de GoFinances. Irei praticar o que aprendi com ReactJS, utilizando TypeSript, rotas e envio de arquivos por formulário.
 
-Essa aplicação irá se conectar ao backend do [Desafio 6](https://github.com/adeonir/gostack-database-upload-arquivo), exibir as transações criadas e permitir a importação de um arquivo CSV que irá gerar novos registrs no banco de dados.
+Essa aplicação irá se conectar ao backend do [Desafio 6](https://github.com/adeonir/gostack-database-upload-arquivo), irá exibir as transações criadas e permitir a importação de um arquivo CSV, gerando novos registros no banco de dados.
 
 ```bash
 # Entre na pasta do desafio 6
@@ -42,7 +42,7 @@ $ cd database-upload-arquivo
 $ yarn server
 ```
 
-Tenha certeza que as informações da categoria, estão sendo retornadas junto com a transação do seu backend no formato como o seguinte:
+Tenha certeza que as informações da categoria, estão sendo retornadas junto com a transação do backend no seguinte formato:
 
 ```json
 {
