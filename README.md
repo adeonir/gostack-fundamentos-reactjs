@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafio 7: aplicação web do GoFinances com ReactJS
+  Desafio 7: Aplicação web do GoFinances com ReactJS
 </h3>
 
 <p align="center">
@@ -17,7 +17,16 @@
 
 ## Tecnologias
 
-- [Node.js](https://nodejs.org/)
+- [ReactJS](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Axios](https://github.com/axios/axios)
+- [Date-fns](https://github.com/date-fns/date-fns)
+- [Styled-Components](https://styled-components.com/)
+- [Polished](https://polished.js.org/)
+- [React-Dropzone](https://github.com/react-dropzone/react-dropzone)
+- [Filesize](https://filesizejs.com/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
 ## Sobre o desafio
 
@@ -25,9 +34,15 @@ Nesse desafio, eu continuei desenvolvendo a aplicação de gestão de transaçõ
 
 Essa aplicação irá se conectar ao backend do [Desafio 6](https://github.com/adeonir/gostack-database-upload-arquivo), exibir as transações criadas e permitir a importação de um arquivo CSV que irá gerar novos registrs no banco de dados.
 
-### Preparando o backend
+```bash
+# Entre na pasta do desafio 6
+$ cd database-upload-arquivo
 
-Antes de tudo, tenha certeza que as informações da categoria, estão sendo retornadas junto com a transação do seu backend no formato como o seguinte:
+# Rode a aplicação
+$ yarn server
+```
+
+Tenha certeza que as informações da categoria, estão sendo retornadas junto com a transação do seu backend no formato como o seguinte:
 
 ```json
 {
@@ -61,7 +76,7 @@ Para esse desafio, temos os seguintes testes:
 
 - **`should be able to list the total balance inside the cards`**: Para que esse teste passe, a aplicação deve permitir que seja exibido na Dashboard, cards contendo o total de `income`, `outcome` e o total da subtração de `income - outcome` que são retornados pelo balance do backend.
 
-* **`should be able to list the transactions`**: Para que esse teste passe, a aplicação deve permitir que sejam listados dentro de uma tabela, toda as transações que são retornadas do backend.
+* **`should be able to list the transactions`**: Para que esse teste passe, a aplicação deve permitir que sejam listados dentro de uma tabela, todas as transações que são retornadas do backend.
 
 - **`should be able to navigate to the import page`**: Para que esse teste passe, a aplicação deve permitir a troca de página através do Header, pelo botão que contém o nome `Importar`.
 
@@ -84,12 +99,6 @@ $ yarn start
 
 # Rode os testes
 $ yarn test
-
-# Entre na pasta do desafio 6
-$ cd database-upload-arquivo
-
-# Rode a aplicação
-$ yarn server
 ```
 
 ## Licença
